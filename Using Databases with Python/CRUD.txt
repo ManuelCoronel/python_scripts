@@ -1,0 +1,20 @@
+CREATE TABLE Users (
+name VARCHAR(128),
+email VARCHAR(128)
+)
+
+
+INSERT INTO Users (name,email) VALUES ('will','will@umich.edu')
+
+DELETE FROM Users WHERE name='PEPE'
+
+UPDATE Users SET email='andrade@ufps.edu' WHERE name='manuel'
+
+SELECT * FROM Users
+
+SELECT * FROM Users WHERE email='andrade@udfps.edu'
+
+
+SELECT * FROM Users ORDER BY email
+
+SELECT * FROM Users ORDER BY name
