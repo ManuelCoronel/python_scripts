@@ -1,0 +1,27 @@
+
+BASES DE DATOS
+
+claves :
+
+primaria : fin de la flecha apuntadora, es unica.
+
+logica : para hacer busquedas en el futuro
+
+extranjera : inicio de la felcha apuntadora
+
+(la flecha apuntadora es la relacion entre dos tablas, como canciones y albumnes,
+donde las canciones apuntan a los albumnes y se buscan por el titulo (clave logica))
+
+
+JOIN//////
+
+select Album.title, Artist.name from Album join Artist on  Album.artist_id = Artist.id 
+
+SELECT Track.title, Genre.name FROM Track join Genre on Track.genre_id = Genre.id
+
+
+
+
+
+SELECT Track.title, Artist.name, Album.title, Genre.name from Album join Artist join Genre join Track on Album.artist_id = Artist.id
+and Track.album_id = Album.id and  Track.genre_id = Genre.id
